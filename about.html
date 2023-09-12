@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .logo {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btnHome {
+            margin-right: 20px;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+
+        .btnShows {
+            margin-right: 20px;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+
+        .btnAboutUs {
+            margin-right: 20px;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+
+        .btnContactUs {
+            margin-right: 20px;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+          <a href="Test.html"><button class="btnHome">Home</button></a>
+          <a href="shows.html"><button class="btnShows">Shows</button></a>
+          <a href="about.html"><button class="btnAboutUs">About Us</button></a>
+          <a href="contact.html"><button class="btnContactUs">Contact Us</button></a>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="home" class="tab">
+            <h2>Home</h2>
+            <img src="logo.png" alt="Logo" class="logo">
+            <p>This is the home page content.</p>
+        </div>
+        <div id="tab1" class="tab">
+            <h2>Tab 1</h2>
+            <button onclick="openTab('home')">Home</button>
+            <p>This is the content of tab 1.</p>
+        </div>
+        <div id="tab2" class="tab">
+            <h2>Tab 2</h2>
+            <button onclick="openTab('home')">Home</button>
+            <p>This is the content of tab 2.</p>
+        </div>
+        <div id="tab3" class="tab">
+            <h2>Tab 3</h2>
+            <button onclick="openTab('home')">Home</button>
+            <p>This is the content of tab 3.</p>
+        </div>
+        <button onclick="openTab('home')">Home</button>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.style.display = 'none');
+
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.style.display = 'block';
+        }
+        openTab('home');
+    </script>
+</body>
+</html>
