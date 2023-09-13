@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Day Ministries</title>
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -27,52 +28,52 @@
             cursor: pointer;
         }
 
-        .btn-home-page {
-            margin-right: 20px;
-            border: none;
-            color: black;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-
         .btn-shows {
-            margin-right: 20px;
+            margin-right: 130px;
+            letter-spacing: 1px;
             border: none;
             color: black;
-            padding: 10px 20px;
+            padding: 10px 10px;
             text-align: center;
             text-decoration: none;
+            text-transform: uppercase;
             display: inline-block;
             cursor: pointer;
             border-radius: 16px;
+            text-decoration: none;
+            color: #fff;
         }
 
-        .btn-aboutus {
-            margin-right: 20px;
+        .btn-ourstory {
+            margin-right: 130px;
+            letter-spacing: 1px;
             border: none;
             color: black;
-            padding: 10px 20px;
+            padding: 10px 10px;
             text-align: center;
             text-decoration: none;
+            text-transform: uppercase;
             display: inline-block;
             cursor: pointer;
             border-radius: 16px;
+            text-decoration: none;
+            color: #fff;
         }
 
         .btn-contactus {
-            margin-right: 20px;
+            margin-right: 300px;
+            letter-spacing: 1px;
             border: none;
             color: black;
-            padding: 10px 20px;
+            padding: 10px 10px;
             text-align: center;
             text-decoration: none;
+            text-transform: uppercase;
             display: inline-block;
             cursor: pointer;
             border-radius: 16px;
+            text-decoration: none;
+            color: #fff;
         }
 
         .container-header {
@@ -82,10 +83,121 @@
         }
         
         .logo {
-            font-size: 28px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 35px;
             font-weight: bold;
+            letter-spacing: 2px;
             text-transform: uppercase;
             padding-left: 100px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .banner {
+            text-align: center;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        
+        .banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .contact-form {
+            padding: 40px 0;
+            margin: 0 10px;
+        }
+        
+        .form-container {
+            max-width: 40%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-container label {
+            display:block;
+            font-weight: bold;
+        }
+
+        .form-container input, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            resize: vertical;
+        }
+
+        .submit-button {
+            padding: 10px 20px;
+            background-color: #0dac30;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        .contact-info {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        
+        .hamburger {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .logo {
+                display: none;
+            }
+        
+            .hamburger {
+                display: flex;
+            }
+        
+            #nav-menu {
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                display: none;
+            }
+        
+            #nav-menu.active {
+                display: block;
+                flex-direction: row;
+                padding: 1rem;
+            }
         }
 
     </style>
@@ -93,18 +205,56 @@
 <body>
     <header>
         <div class="container-header">
-            <div class="logo">Modern Day Ministries</div>
+            <div><a class="logo" href="homePage.html">Modern Day Ministries</a></div>
             <nav class="nav-header">
-                <a href="homePage.html"><button class="btn-home-page">Home</button></a>
-                <a href="shows.html"><button class="btn-shows">Shows</button></a>
-                <a href="about.html"><button class="btn-aboutus">About Us</button></a>
-                <a href="contact.html"><button class="btn-contactus">Contact Us</button></a>
+                <a class="btn-shows" href="shows.html">Shows</a>
+                <a class="btn-ourstory" href="ourStory.html">Our Story</a>
+                <a class="btn-contactus" href="contact.html">Contact Us</a>
             </nav>
         </div> 
     </header>
-    <div>
-    </div>
-    <script>
-    </script>
+    <section class="banner">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png" alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        <p>Ask questions and give feedback.</p>
+    </section>
+
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="#" method="POST">
+ 
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+ 
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+ 
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+ 
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+ 
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            Modern Day Ministries<br>
+            1001 Bethel Cir<br>
+            Mishawaka, IN 46545<br>
+            Phone: <a href="tel:574-703-4266">574-703-4266</a><br>
+            Email: <a href="mailto:mdmfeedback@gmail.com">mdmfeedback@gmail.com</a>
+        </address>
+    </section>
+ 
+    <footer>
+        <p>© 2023 Modern Day Ministries. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
