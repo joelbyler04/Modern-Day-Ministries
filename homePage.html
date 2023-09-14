@@ -91,6 +91,55 @@
             text-decoration: none;
             color: #fff;
         }
+        
+        .contact-info {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f7f7f7;
+        }
+        
+        .contact-info h2 {
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        
+        .hamburger {
+            display: none;
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .logo {
+                display: none;
+            }
+        
+            .hamburger {
+                display: flex;
+            }
+        
+            #nav-menu {
+                position: absolute;
+                top: 4rem;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+                display: none;
+            }
+        
+            #nav-menu.active {
+                display: block;
+                flex-direction: row;
+                padding: 1rem;
+            }
+        }
 
     </style>
 </head>
@@ -107,7 +156,21 @@
     </header>
     <div>
     </div>
-    <script>
-    </script>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            Modern Day Ministries<br>
+            1001 Bethel Cir<br>
+            Mishawaka, IN 46545<br>
+            Phone: <a href="tel:574-703-4266">574-703-4266</a><br>
+            Email: <a href="mailto:mdmfeedback@gmail.com">mdmfeedback@gmail.com</a>
+        </address>
+    </section>
+ 
+    <footer>
+        <p>© 2023 Modern Day Ministries. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
